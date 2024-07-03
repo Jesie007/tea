@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  background-color: black;
+  opacity: 0.9;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #333;
+}
+
+.nav.sticky {
+  position: fixed;
+  background-color: rgba(28, 25, 25, 0.93);
+  z-index: 100;
+}
+
+.logo {
+  float: left;
+  height: 50px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item {
+  text-decoration: underline;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: beige;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: aquamarine;
+}
+
+.header-banner {
+  position: relative;
+  text-align: center;
+  color: beige;
+}
+
+.header-img {
+  height: 700px;
+  width: 1200px;
+  opacity: 0.9;
+}
+
+.header-content {
+  background-color: black;
+  padding: 1.2rem 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.header-content h2 {
+  margin-bottom: 1.2rem;
+}
+
+/* section tea of the month */
+
+.tea-types {
+  text-align: center;
+  color: beige;
+  margin: 9.6rem auto 2rem auto;
+}
+
+.section-container {
+  display: grid;
+  color: beige;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.tea-types h2 {
+  margin-bottom: 1.2rem;
+}
+
+.section-container img {
+  width: 100%;
+}
+
+p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* section location */
+.container {
+  margin: 80px auto;
+  height: 500px;
+  position: relative;
+  color: beige;
+  text-align: center;
+}
+
+.container-location {
+  position: absolute;
+  top: 10%;
+  left: 45%;
+}
+
+.location-container-1 {
+  /* display: flex; */
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  background-color: black;
+  width: 300px;
+  opacity: 1;
+  padding: 1rem;
+}
+
+.location-container-2 {
+  /* display: flex; */
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  background-color: black;
+  width: 300px;
+  opacity: 1;
+  padding: 1rem;
+}
+
+.location-container-3 {
+  /* display: flex; */
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  background-color: black;
+  width: 300px;
+  opacity: 1;
+  padding: 1rem;
+}
+
+/* footer section */
+footer {
+  height: 200px;
+  color: beige;
+  text-align: center;
+}
